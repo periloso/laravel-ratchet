@@ -51,6 +51,14 @@ class RatchetServerCommand extends Command
     }
 
     /**
+     * Keep compatibility with the older Laravel versions.
+     */
+    public function fire()
+    {
+        $this->handle();
+    }
+
+    /**
      * Execute the console command.
      *
      * @return mixed
