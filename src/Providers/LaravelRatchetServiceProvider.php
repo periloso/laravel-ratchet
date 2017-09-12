@@ -1,8 +1,8 @@
 <?php
 
-namespace Askedio\LaravelRatchet\Providers;
+namespace Periloso\LaravelRatchet\Providers;
 
-use Askedio\LaravelRatchet\Console\Commands\RatchetServerCommand;
+use Periloso\LaravelRatchet\Console\Commands\RatchetServerCommand;
 use Illuminate\Support\ServiceProvider;
 
 class LaravelRatchetServiceProvider extends ServiceProvider
@@ -35,7 +35,7 @@ class LaravelRatchetServiceProvider extends ServiceProvider
         $this->loadTranslationsFrom(__DIR__.'/../lang', 'ratchet');
 
         $this->publishes([
-            __DIR__.'/../lang' => resource_path('lang/askedio/ratchet'),
+            __DIR__.'/../lang' => resource_path('lang/periloso/ratchet'),
         ]);
 
         $this->publishes([

@@ -1,6 +1,6 @@
 <?php
 
-namespace Askedio\LaravelRatchet\Console\Commands;
+namespace Periloso\LaravelRatchet\Console\Commands;
 
 use Illuminate\Console\Command;
 use Ratchet\Http\HttpServer;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Askedio\LaravelRatchet;
+namespace Periloso\LaravelRatchet;
 
 use GrahamCampbell\Throttle\Facades\Throttle;
 use Ratchet\ConnectionInterface;

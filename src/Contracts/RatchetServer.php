@@ -1,6 +1,6 @@
 <?php
 
-namespace Askedio\LaravelRatchet\Contracts;
+namespace Periloso\LaravelRatchet\Contracts;
 
 use Ratchet\ConnectionInterface;
 

@@ -1,20 +1,38 @@
 {
-    "name": "askedio/laravel-ratchet",
-    "description": "A Ratchet Example",
-    "keywords": ["laravel"],
+    "name": "periloso/laravel-ratchet",
+    "description": "Laravel and Ratchet integration.",
+    "keywords": ["laravel", "ratchet"],
+    "authors": [
+        {
+            "name": "Alessio Periloso",
+            "email": "mail@periloso.com"
+        }
+    ],
     "license": "MIT",
     "type": "library",
     "require": {
-        "php": ">=5.5.9",
+        "php": ">=7.0",
         "ext-zmq": "*",
-        "laravel/framework": "5.*",
+        "laravel/framework": "^5.3",
         "cboden/ratchet": "^0.3",
         "graham-campbell/throttle": "6.*",
         "react/zmq": "0.2.*|0.3.*"
      },
+    "require-dev": {
+        "phpunit/phpunit": "^5.2"
+    },
     "autoload": {
         "psr-4": {
-            "Askedio\\LaravelRatchet\\": "src/"
+            "Periloso\\LaravelRatchet\\": "src/"
         }
-    }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Periloso\\LaravelRatchet\\Providers\\LaravelRatchetServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }

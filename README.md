@@ -14,12 +14,12 @@ This package provides the artisan command `ratchet:serve` that will start a [Rat
 # Installation
 Install with composer
 ~~~
-composer require askedio/laravel-ratchet
+composer require periloso/laravel-ratchet
 ~~~
 
 Register the `provider` in `config/app.php`.
 ~~~
-Askedio\LaravelRatchet\Providers\LaravelRatchetServiceProvider::class,
+Periloso\LaravelRatchet\Providers\LaravelRatchetServiceProvider::class,
 ~~~
 Install [ZMQ](http://zeromq.org/intro:get-the-software) to use the `WampServer` driver.
 
@@ -37,13 +37,13 @@ Starting WampServer server on: 0.0.0.0:8080
 Starting ZMQ server on: 127.0.0.1:5555
 ~~~
 
-Create your own class based on or extending [RatchetServerExample.php](https://github.com/Askedio/laravel-ratchet/blob/master/src/Pusher.php).
+Create your own class based on or extending [RatchetServerExample.php](https://github.com/Periloso/laravel-ratchet/blob/master/src/Pusher.php).
 
 Insert data to ZMQ using [the example](http://socketo.me/docs/push#editblogsubmission) provided by Ratchet.
 
 
 # Socket Server
-Use the IoServer `driver` and the [RatchetServerExample.php](https://github.com/Askedio/laravel-ratchet/blob/master/src/RatchetServerExample.php) `class` to create a simple socket server.
+Use the IoServer `driver` and the [RatchetServerExample.php](https://github.com/Periloso/laravel-ratchet/blob/master/src/RatchetServerExample.php) `class` to create a simple socket server.
 
 Here is an example you could use in your `App`.
 ~~~
@@ -52,7 +52,7 @@ Here is an example you could use in your `App`.
 namespace App;
 
 use Ratchet\ConnectionInterface;
-use Askedio\LaravelRatchet\RatchetServer;
+use Periloso\LaravelRatchet\RatchetServer;
 
 class RatchetServer extends RatchetServer
 {
@@ -92,7 +92,7 @@ Usage:
 Options:
       --host[=HOST]      Ratchet server host [default: "0.0.0.0"]
   -p, --port[=PORT]      Ratchet server port [default: "9090"]
-      --class[=CLASS]    Class that implements MessageComponentInterface. [default: "Askedio\LaravelRatchet\RatchetServerExample"]
+      --class[=CLASS]    Class that implements MessageComponentInterface. [default: "Periloso\LaravelRatchet\RatchetServerExample"]
       --driver[=DRIVER]  Ratchet connection driver [IoServer|WsServer|WampServer] [default: "WampServer"]
       ...
 ~~~
