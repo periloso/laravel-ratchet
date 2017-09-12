@@ -127,7 +127,7 @@ abstract class RatchetServer implements MessageComponentInterface
         return !Throttle::attempt([
           'ip'    => $conn->remoteAddress,
           'route' => $setting,
-        ], $connectionThrottle[0], $connectionThrottle[1]);
+        ], (int)$connectionThrottle[0], (int)$connectionThrottle[1]);
     }
 
     /**
