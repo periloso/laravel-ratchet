@@ -55,7 +55,7 @@ class RatchetServerCommand extends Command
      *
      * @return mixed
      */
-    public function fire()
+    public function handle()
     {
         $this->host = $this->option('host');
 
